@@ -1,0 +1,12 @@
+<div>
+  <label>Year:</label>
+  <select [(ngModel)]="selectedYear" (ngModelChange)="onRangeChange()">
+    <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+  </select>
+</div>
+<div>
+  <label>Month:</label>
+  <select [(ngModel)]="selectedMonth" (ngModelChange)="onRangeChange()">
+    <option *ngFor="let month of months" [value]="month.value">{{ month.name }}</option>
+  </select>
+</div>

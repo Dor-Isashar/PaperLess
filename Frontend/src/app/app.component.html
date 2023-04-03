@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Paperless</h1>
+  <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+    <month-picker [minDate]="minDate" [maxDate]="maxDate" (rangeChange)="getDate($event)"></month-picker>
+    <p *ngIf="dateInvalid" class="error">Please enter a valid date</p>
+    <button [disabled]="dateInvalid" type="submit">Submit</button>
+  </form>
+      <span class="key" *ngIf="maxValue">Max:
+        <span class="max"  *ngIf="maxValue">{{maxValue}} </span>
+      </span>
+      <span class="key"  *ngIf="minValue">Min:
+        <span class="min" *ngIf="maxValue">{{minValue}} </span>
+      </span>
+<hr  *ngIf="maxValue"/>
+    <div *ngFor="let rate of rates" class="pair">
+      <span class="key">{{ rate.date }}:</span>
+      <span class="value">{{  rate.value }}</span>
+    </div>
+  </div>
