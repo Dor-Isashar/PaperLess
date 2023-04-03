@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Paperless": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7018\r\n"
+    }
+  }
+}

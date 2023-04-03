@@ -1,0 +1,9 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "ExchangeRateApiKey": "HWleCZ5gKcecNWUWIQNspSN6KOo3sxfH",
+    "ExchangeRateUrl": "https://api.apilayer.com/exchangerates_data/"  
+  }
+}
